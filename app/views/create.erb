@@ -1,8 +1,29 @@
-<form>
-<select>
-	<% @array.each{|cat| %>
-	<option value =<%= cat.name %> >  <%= cat.name.capitalize %> </option>
-  	<% } %>
-</select>
 
+<form action="/create" method="post">
+	<h3>What category would you like to post in?</h3>
+
+	<select name = "category">
+		<option value = "home" >  Home </option>
+		<option value = "sports" >  Sports </option>
+		<option value = "computers" >  Computers </option>
+		<option value = "sales" >  Sales </option>
+		<option value = "trades" >  Trades </option>
+	</select>
+
+	<h3>Name of post:</h3>
+  	<input type="text" name="title">
+
+	<h3>Your name</h3>
+  	<input type="text" name="author">
+
+	<h3>Enter your post</h3>
+  	<input type="text" name="body">
+
+  	<input type="submit" value="Submit" >
 </form>
+
+
+
+<!-- title
+author
+body -->
