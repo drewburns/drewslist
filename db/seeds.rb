@@ -1,0 +1,5 @@
+Category.create(name: "home")
+Category.create(name: "sports")
+Category.create(name: "computers")
+Category.create(name: "sales")
+Category.create(name: "trades")

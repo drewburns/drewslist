@@ -1,0 +1,8 @@
+<form>
+<select>
+	<% @array.each{|cat| %>
+	<option value =<%= cat.name %> >  <%= cat.name.capitalize %> </option>
+  	<% } %>
+</select>
+
+</form>
