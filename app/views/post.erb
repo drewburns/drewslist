@@ -3,4 +3,13 @@
 	<h5 id = "slogan">Your access to anything under the sun</h5>
 	<a href="/create"><div id = "create_button"><p>Submit a post</p></div></a>
 </div>
-<p>Something went wrong...</p>
+<div id = "wrapper">
+<div id = "main">
+<h1><%= @post.title %> </h1>
+<h3><%= "By " + @post.author %> </h3>
+<p><%= @post.body %></p>
+<p><%= "Your edit code is   :   /edit/" + @post.edit_url %></p>
+
+
+</div>
+</div>

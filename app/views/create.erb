@@ -1,5 +1,10 @@
+<div id = "header">
+	<a href = "/"><h1 id = "website_name">DrewsList</h1></a>
+	<h5 id = "slogan">Your access to anything under the sun</h5>
+	<a href="/create"><div id = "create_button"><p>Submit a post</p></div></a>
+</div>
 
-<form action="/create" method="post">
+<form id = "main_form" action="/create" method="post">
 	<h3>What category would you like to post in?</h3>
 
 	<select name = "category">
@@ -13,11 +18,13 @@
 	<h3>Name of post:</h3>
   	<input type="text" name="title">
 
-	<h3>Your name</h3>
+	<h3>Your name:</h3>
   	<input type="text" name="author">
 
-	<h3>Enter your post</h3>
-  	<input type="text" name="body">
+	<h3>Enter your post:</h3>
+  	<textarea name = "body" rows="10" cols="60">
+
+	</textarea>
 
   	<input type="submit" value="Submit" >
 </form>

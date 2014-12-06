@@ -1,0 +1,17 @@
+<div id = "header">
+	<a href = "/"><h1 id = "website_name">DrewsList</h1></a>
+	<h5 id = "slogan">Your access to anything under the sun</h5>
+	<a href="/create"><div id = "create_button"><p>Submit a post</p></div></a>
+</div>
+<div id = "list">
+<% @posts.reverse.each {|post| %>
+<div class = "post">
+	<a href = <%= "/post/" + post.id.to_s %> > <h1><%= post.title%></h1></a>
+	<h4><%= "By " + post.author%></h4>
+</div>
+<% }%>
+<% if @posts.size == 0 %>
+ <h4>There are none :(</h4>
+<% end %>
+
+</div>

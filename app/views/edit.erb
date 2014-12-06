@@ -3,4 +3,13 @@
 	<h5 id = "slogan">Your access to anything under the sun</h5>
 	<a href="/create"><div id = "create_button"><p>Submit a post</p></div></a>
 </div>
-<p>Something went wrong...</p>
+<form id = "main_form" action="/create" method="post">
+
+	<h3>Edit your post:</h3>
+  	<textarea name = "body" rows="10" cols="60">
+  		<%= @post.body %>
+	</textarea>
+
+  	<input type="submit" value="Update" >
+</form>
+
