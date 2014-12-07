@@ -8,8 +8,12 @@
 <h1><%= @post.title %> </h1>
 <h3><%= "By " + @post.author %> </h3>
 <p><%= @post.body %></p>
-<p><%= "Your edit code is   :   /edit/" + @post.edit_url %></p>
 
+<a href="/edit/<%= @post.id %>"  >
+  <div id = "create_button">
+    Edit
+  </div>
+</a>
 
 </div>
 </div>

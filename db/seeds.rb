@@ -3,4 +3,9 @@
 # Category.create(name: "computers")
 # Category.create(name: "sales")
 # Category.create(name: "trades")
-Post.create(id: (Post.all.size) + 1, category: "home"  , title:  "Looking for a new fridge" , body: "I am looking for a new fridge" , edit_url: (0...10).map{ ('a'..'z').to_a[rand(10)] }.join , author: "Andrew")
+p = Post.create(category: "home", 
+            title:  "Looking for a new fridge", 
+            body: "I am looking for a new fridge", 
+            author: "Andrew")
+
+puts p.title
