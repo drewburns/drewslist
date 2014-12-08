@@ -8,11 +8,9 @@
 	<h3>What category would you like to post in?</h3>
 
 	<select name = "category">
-		<option value = "home" >  Home </option>
-		<option value = "sports" >  Sports </option>
-		<option value = "computers" >  Computers </option>
-		<option value = "sales" >  Sales </option>
-		<option value = "trades" >  Trades </option>
+		<% @categories.each {|cat| %>
+			<option value = <%= cat.name %> >  <%= cat.name %> </option>
+		<% }%>
 	</select>
 
 	<h3>Name of post:</h3>

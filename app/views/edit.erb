@@ -4,7 +4,7 @@
 	<a href="/create"><div id = "create_button"><p>Submit a post</p></div></a>
 </div>
 
-<form id = "main_form" action="/create" method="post">
+<form id = "main_form" action="/edit/<%= @post.id %>" method="post">
 	<h3>Edit your post:</h3>
   	<textarea name = "body" rows="10" cols="60">
   		<%= @post.body %>
