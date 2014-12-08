@@ -33,6 +33,7 @@ get '/edit/:id' do
 end
 
 post '/edit/:id' do
+	@categories = Category.all
 	@post = Post.find(params[:id])
 	Post.find(params[:id]).update_attributes(body: params[:body])
 	erb :index
